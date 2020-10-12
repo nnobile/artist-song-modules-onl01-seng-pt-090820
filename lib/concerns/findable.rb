@@ -1,5 +1,4 @@
-module Findable
-  attr_reader :name
+module Findable < Artist
 
   def find_by_name(name)
     @@artists.detect{|a| a.name == name}
