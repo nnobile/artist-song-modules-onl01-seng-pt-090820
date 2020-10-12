@@ -1,7 +1,7 @@
 module Findable
 
   def find_by_name
-    self.detect{|a| a.name == name}
+    @@song.detect{|a| a.name == name}
   end
 
 
